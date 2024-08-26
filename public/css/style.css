@@ -1,0 +1,83 @@
+body{
+    font-family: "plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/*cards*/
+
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+
+.listing-list{
+    text-decoration: none;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 20rem;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+/*card effect*/
+
+.card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: rgba(231, 227, 227, 0.5); /* Optional: Adds a dark semi-transparent background */
+    color: white; /* Ensures text inside the overlay is visible */
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1; /* Makes the overlay fully visible on hover */
+}
+
+/*show page*/
+
+.show-image{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
