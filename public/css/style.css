@@ -1,51 +1,23 @@
-.btn-search {
-    background-color: #fe424d;
-    color: #fff;
-  }
+body{
+    font-family: "plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-  .btn-search:hover {
-    background-color: #fe424d;
-    color: #fff;
-  }
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
 
-  .navbar {
-    height: auto; /* Auto height to adjust based on content */
-    background-color: white;
-  }
-
-  .fa-compass {
+.fa-compass{
     color: #fe424d;
     font-size: 2rem;
-  }
+}
 
-  .nav-link {
+.nav-link{
     color: #222222 !important;
-    font-weight: 500;
-  }
-
-  .nav-link:hover {
-    color: #fe424d !important;
-  }
-
-  /* Flexbox adjustments for small screens */
-  .navbar-collapse {
-    flex-direction: column; /* Stack items vertically on small screens */
-  }
-
-  .navbar-nav {
-    align-items: flex-start; /* Align nav items to the start */
-  }
-
-  /* Adjustments for larger screens */
-  @media (min-width: 768px) {
-    .navbar-nav {
-      flex-direction: row;
-      align-items: center;
-    }
-    .navbar-collapse {
-      flex-direction: row; /* Horizontal stacking on larger screens */
-    }
-  }
+}
 
 /*cards*/
 
