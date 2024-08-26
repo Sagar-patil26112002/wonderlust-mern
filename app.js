@@ -29,7 +29,7 @@ app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));
 
 // MongoDB Connection
-const MONGO_URL = "mongodb://127.0.0.1:27017/wonderlust";
+//const MONGO_URL = "mongodb://127.0.0.1:27017/wonderlust";
 main().then(() => console.log("Connection successful")).catch(console.error);
 
 async function main() {
