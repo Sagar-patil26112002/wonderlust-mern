@@ -7,7 +7,6 @@ module.exports.index = async(req, res) => {
 
 // controllers/listing.js
 module.exports.renderNewForm = (req, res) => {
-    console.log("Rendering new listing form");
     res.render("listings/new.ejs");
 };
 
