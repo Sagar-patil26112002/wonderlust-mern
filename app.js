@@ -15,6 +15,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const multer  = require('multer')
 const dbUrl = process.env.ATLASDB_URL;
+const geoApi = process.env.GEO_API;
 
 const User = require("./models/user.js");
 const userRouter = require("./routes/user.js");
@@ -74,6 +75,7 @@ passport.deserializeUser(User.deserializeUser());
 
 // Global Middleware for Flash Messages and User Data
 app.use((req, res, next) => {
+    res.locals.geoApi = geoApi;
     res.locals.success = req.flash("success");
     res.locals.error = req.flash("error");
     res.locals.currUser = req.user;
